@@ -62,25 +62,11 @@
         display: flex;
         align-items: center;
         gap: 1rem;
-        border: 1px solid v.$dark2;
-        border-radius: 2rem;
-        padding: 0.5rem 1rem;
-        color: v.$dark1 ;
-        transition: 0.3s;
+        
+        @include m.boton;
 
-        &:hover{
-            background-color: v.$dark2;
-            color: v.$blanco;
-            transition: 0.3s;
-
-            img {
-                filter: invert(100%);
-            }
-        }
-
-        img {
-            width: 24px;
-            height: 24px;
+        img{
+            @include m.iconSize;
         }
     }
 
