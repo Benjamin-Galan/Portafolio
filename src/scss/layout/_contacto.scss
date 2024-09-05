@@ -1,0 +1,50 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.contenido-contacto {
+    @include m.tablet {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+
+    input,
+    textarea {
+        width: 100%;
+        padding: 1rem;
+        border: solid 1px;
+        border-radius: 1rem;
+    }
+
+    input {
+        height: 4rem;
+        margin-bottom: 1.5rem;
+    }
+
+    input[type="submit"] {
+        @include m.botonSubmit;
+    }
+}
+
+.contacto{
+    margin-bottom: 3rem;
+}
+
+.info-contacto {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    
+    @include m.tablet{
+        margin-bottom: 3rem;
+    }
+
+    img {
+        width: 32px;
+    }
+}
