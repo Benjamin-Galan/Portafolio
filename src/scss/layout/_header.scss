@@ -40,5 +40,10 @@
         color: v.$dark1;
         font-size: 2.4rem;
         font-size: 2rem;
+        transition: 0.3s;
+
+        &:hover{
+            font-weight: 600;
+        }
     }
 }
