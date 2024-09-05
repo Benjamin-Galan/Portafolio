@@ -65,24 +65,3 @@ img {
 body>section {
     padding: 10rem 0
 }
-
-.enlaces {
-    transition: color 0.3s;
-    position: relative;
-
-    &:hover::before {
-        width: 100%;
-    }
-
-    &::before {
-        content: '';
-        width: 0;
-        height: 2px;
-        border-radius: 2px;
-        background-color: v.$dark2;
-        position: absolute;
-        bottom: -.25rem;
-        left: 0;
-        transition: width .4s;
-    }
-}
