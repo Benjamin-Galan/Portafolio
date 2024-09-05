@@ -15,18 +15,23 @@
 <body>
     <header class="header">
         <div class="contenedor contenido-header">
-            <h1>benja.dev</h1>
-
-            <!-- <div class="burger-icon">
+            
+            <div>
+                <h1>benja.dev</h1>
+                <!-- <div class="burger-icon">
                 <label class="burger" for="burger">
                   <input class="line" type="checkbox" id="burger" />
                 </label>
               </div>               -->
+            </div>
+
+            
 
             <nav class="navegacion-principal">
                 <a class="enlaces" href="">Proyectos</a>
                 <a class="enlaces" href="">Sobre mi</a>
                 <a class="enlaces" href="">Contacto</a>
+                <a class="enlaces" href="">Cv</a>
                 <div>
                     <label class="ui-switch">
                         <input type="checkbox">
@@ -41,7 +46,7 @@
 
     <section class="presentacion">
         <div class="contenido-presentacion">
-            <img class="perfil-img" src="src/img/gallery/full/perfil-960.webp" alt="">
+            <img loading="lazy" class="perfil-img" src="src/img/gallery/full/perfil-960.webp" alt="">
 
             <div class="presentacion-texto">
                 <p>Hola, soy benja</p>
@@ -49,28 +54,142 @@
                 <p>Te gustaría saber más sobre mi trabajo? Por favor, baja un poco y echa un vistazo a mi portafolio</p>
 
                 <div class="presentacion-enlaces">
-                    <a href="">Github<img src="src/img/icons/github-svgrepo-com (1).svg" alt=""></a>
-                    <a href="">LinkedIn<img src="src/img/icons/linkedin-svgrepo-com (1).svg" alt=""></a>
+                    <a href="">Github<img loading="lazy" src="src/img/icons/github-svgrepo-com (1).svg" alt=""></a>
+                    <a href="">LinkedIn<img loading="lazy" src="src/img/icons/linkedin-svgrepo-com (1).svg" alt=""></a>
                 </div>
             </div>
         </div>
 
     </section>
-    <!-- 
-    https://uiverse.io/Peary74/kind-cougar-54 -->
-    <section class="proyectos contenedor">
+
+    <section class="proyectos">
         <h2>Proyectos</h2>
+
+        <div class="contenedor-proyectos">
+            <div class="contenido-proyectos">
+                <div class="imagen">
+                    <img loading="lazy" src="src/img/gallery/full/festival-musica.jpeg" alt="">
+                </div>
+
+                <div class="proyecto-info">
+                    <h3>Techo & EDM Festival</h3>
+
+                    <ul class="proyecto-stack">
+                        <li>
+                            <img loading="lazy" src="src/img/icons/javascript-svgrepo-com.svg" alt="">
+                        </li>
+                        <li>
+                            <img loading="lazy" src="src/img/icons/php01-svgrepo-com.svg" alt="">
+                        </li>
+                        <li>
+                            <img loading="lazy" src="src/img/icons/sass-svgrepo-com.svg" alt="">
+                        </li>
+                        <li>
+                            <img loading="lazy" src="src/img/icons/mysql-svgrepo-com (1).svg" alt="">
+                        </li>
+                    </ul>
+                    <p>Obcaecati aliquid amet laboriosam, quo
+                        similique nulla quisquam, reiciendis iure vitae atque natus doloribus
+                    </p>
+
+                    <div class="proyectos-enlaces">
+                        <a href="">Codigo<img loading="lazy" src="src/img/icons/github-svgrepo-com (1).svg" alt=""></a>
+                        <a href="">Visitar<img loading="lazy" src="src/img/icons/chain-svgrepo-com.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contenido-proyectos">
+                <div class="imagen">
+                    <img src="src/img/gallery/full/festival-musica.jpeg" alt="">
+                </div>
+                <div class="proyecto-info">
+                    <h3>Techo & EDM Festival</h3>
+                    <ul class="proyecto-stack">
+                        <li>
+                            <img loading="lazy" src="src/img/icons/javascript-svgrepo-com.svg" alt="">
+                        </li>
+                        <li>
+                            <img loading="lazy" src="src/img/icons/php01-svgrepo-com.svg" alt="">
+                        </li>
+                        <li>
+                            <img loading="lazy" src="src/img/icons/sass-svgrepo-com.svg" alt="">
+                        </li>
+                        <li>
+                            <img loading="lazy" src="src/img/icons/mysql-svgrepo-com (1).svg" alt="">
+                        </li>
+                    </ul>
+                    <p>Obcaecati aliquid amet laboriosam, quo
+                        similique nulla quisquam, reiciendis iure vitae atque natus doloribus
+                    </p>
+
+                    <div class="proyectos-enlaces">
+                        <a href="">Codigo<img src="src/img/icons/github-svgrepo-com (1).svg" alt=""></a>
+                        <a href="">Visitar<img src="src/img/icons/chain-svgrepo-com.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section class="sobre-mi contenedor">
+    <section class="contenedor">
         <h2>Sobre mi</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis soluta perferendis odit amet dolorum
-            reprehenderit nisi debitis repudiandae deserunt nihil aperiam error quas, quos laborum quod commodi ut nam
-            at.</p>
+        <div class="sobre-mi">
+            <div class="texto-sobremi">
+
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis soluta perferendis odit amet
+                    dolorum
+                </p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis soluta perferendis odit amet
+                    dolorum </p>
+            </div>
+
+            <div class="video-yt">
+                <p>Tambien creo contenido por youtube</p>
+                <iframe id="myframe" src="https://www.youtube.com/embed/ptc4Awb0UpU?si=kuRyzCsBVyxxal3Z"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
     </section>
 
-    <section class="contacto contenedor">
+    <section class="contenedor">
         <h2>Contacto</h2>
+
+        <div class="contenido-contacto">
+            <div class="contacto">
+                <div class="info-contacto">
+                    <img loading="lazy" src="src/img/icons/place-svgrepo-com.svg" alt="">
+                    <p>Managua, Nicaragua, Villa Reconciliacion</p>
+                </div>
+
+                <div class="info-contacto">
+                    <img loading="lazy" src="src/img/icons/email-svgrepo-com.svg" alt="">
+                    <p>begalan@outlook.es</p>
+                </div>
+
+                <div class="info-contacto">
+                    <img loading="lazy" src="src/img/icons/whatsapp-svgrepo-com.svg" alt="">
+                    <p>+505 88476321</p>
+                </div>
+            </div>
+
+            <form action="" class="formulario">
+                <legend>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" placeholder="nombre">
+
+                    <label for="email">Correo</label>
+                    <input type="email" id="email" placeholder="correo">
+
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="" id="mensaje" placeholder="Deja un mensaje"></textarea>
+                </legend>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
     </section>
 
     <footer class="footer">
@@ -79,7 +198,6 @@
 
             <div class="footer-enlaces">
                 <a href=""><img src="src/img/icons/instagram-svgrepo-com.svg" alt=""></a>
-                <a href=""><img src="src/img/icons/twitch-svgrepo-com.svg" alt=""></a>
                 <a href=""><img src="src/img/icons/facebook-svgrepo-com.svg" alt=""></a>
                 <a href=""><img src="src/img/icons/youtube-svgrepo-com.svg" alt=""></a>
                 <a href=""><img src="src/img/icons/github-svgrepo-com (1).svg" alt=""></a>
