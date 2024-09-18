@@ -1,0 +1,66 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.dark-mode{
+    background-color: v.$dark2;
+
+    .header {
+        background-color: v.$dark2;
+
+        nav{
+            a{
+                color: v.$blanco;
+            }
+        }
+    
+        h1 {
+            color: v.$blanco;
+        }
+
+        .mobile-menu{
+            filter: invert(100%);
+        }
+    }
+
+    .presentacion{
+        p{
+            color: v.$blanco;
+        }
+    }
+
+    .proyectos{
+        h2, p{
+            color: v.$blanco;
+        }
+        h3{
+            color: v.$amarillo;
+            font-weight: 800;
+        }
+    }
+
+    .about{
+        h2, p{
+            color: v.$blanco;
+        }
+    }
+
+    .contact{
+        h2, label{
+            color: v.$blanco;
+        }
+        p{
+            color: v.$amarillo;
+            font-weight: 600;
+        }
+        img{
+            filter: invert(100%);
+        }
+    }   
+
+    .presentacion,
+    .proyectos{
+        ul, a{
+            filter: invert(100%);
+        }
+    }
+}

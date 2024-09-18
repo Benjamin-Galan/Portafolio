@@ -19,12 +19,6 @@
         gap: 5rem;
     }
 
-    h3{
-        text-align: left;
-        font-size: 2.5rem;
-        margin-bottom: 1.5rem;
-    }
-
     p{
         font-size: 1.8rem;
     }
@@ -35,6 +29,16 @@
 }
 
 .proyecto-info{
+    h3{
+        text-align: left;
+        font-size: 2.5rem;
+        margin: 1.5rem 0 1.5rem 0;
+    }
+    @include m.tablet{
+        h3{
+            margin: 0 0 1.5rem 0;
+        }
+    }
     ul{
         margin: 0;
         padding: 0;

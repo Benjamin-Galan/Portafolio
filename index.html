@@ -15,29 +15,24 @@
 <body>
     <header class="header">
         <div class="contenedor contenido-header">
-            
-            <div>
+            <a href="">
                 <h1>benja.dev</h1>
-                <!-- <div class="burger-icon">
-                <label class="burger" for="burger">
-                  <input class="line" type="checkbox" id="burger" />
-                </label>
-              </div>               -->
+            </a>
+
+            <div class="mobile-menu">
+                <img src="src/img/icons/menu-svgrepo-com.svg" alt="">
             </div>
 
-            
-
             <nav class="navegacion-principal">
-                <a class="enlaces" href="">Proyectos</a>
-                <a class="enlaces" href="">Sobre mi</a>
-                <a class="enlaces" href="">Contacto</a>
-                <a class="enlaces" href="">Cv</a>
+                <a class="enlaces" href="#proyectos">Proyectos</a>
+                <a class="enlaces" href="#about">Sobre mi</a>
+                <a class="enlaces" href="#contact">Contacto</a>
+                <a class="enlaces" href="Profile.pdf" target="_blank" rel="noopener noreferrer">Cv</a>
+
                 <div>
-                    <label class="ui-switch">
-                        <input type="checkbox">
-                        <div class="slider">
-                            <div class="circle"></div>
-                        </div>
+                    <label class="switch">
+                        <input type="checkbox" id="mode-toggle">
+                        <span class="slider"></span>
                     </label>
                 </div>
             </nav>
@@ -49,20 +44,23 @@
             <img loading="lazy" class="perfil-img" src="src/img/gallery/full/perfil-960.webp" alt="">
 
             <div class="presentacion-texto">
-                <p>Hola, soy benja</p>
-                <h2>Soy Ingeniero de Sistemas</h2>
+                <p>Hola, soy Benja</p>
+                <h2>Soy Desarrollador Web</h2>
                 <p>Te gustaría saber más sobre mi trabajo? Por favor, baja un poco y echa un vistazo a mi portafolio</p>
 
                 <div class="presentacion-enlaces">
-                    <a href="">Github<img loading="lazy" src="src/img/icons/github-svgrepo-com (1).svg" alt=""></a>
-                    <a href="">LinkedIn<img loading="lazy" src="src/img/icons/linkedin-svgrepo-com (1).svg" alt=""></a>
+                    <a href="https://github.com/Benjamin-Galan" target="_blank">Github<img loading="lazy"
+                            src="src/img/icons/github-svgrepo-com (1).svg" alt=""></a>
+                    <a href="https://www.linkedin.com/in/benjam%C3%ADn-gal%C3%A1n-9346ba297/"
+                        target="_blank">LinkedIn<img loading="lazy" src="src/img/icons/linkedin-svgrepo-com (1).svg"
+                            alt=""></a>
                 </div>
             </div>
         </div>
 
     </section>
 
-    <section class="proyectos">
+    <section class="proyectos" id="proyectos">
         <h2>Proyectos</h2>
 
         <div class="contenedor-proyectos">
@@ -132,21 +130,23 @@
         </div>
     </section>
 
-    <section class="contenedor">
+    <section class="about" id="about">
         <h2>Sobre mi</h2>
+
         <div class="sobre-mi">
             <div class="texto-sobremi">
-
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis soluta perferendis odit amet
-                    dolorum
-                </p>
+                <p>Hola, soy Benjamín Galán Díaz. Manejo tecnologías como HTML, CSS, JavaScript
+                    y PHP en el backend. Actualmente, estoy cursando el último año de Ingeniería en Sistemas y estoy en
+                    búsqueda de oportunidades laborales en el campo del desarrollo web.</p>
                 <br>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis soluta perferendis odit amet
-                    dolorum </p>
+                <p>Si te parece interesante mi perfil, no dudes en contactarme. ¡Estoy emocionado por contribuir y
+                    seguir aprendiendo en este ámbito!</p>
             </div>
 
             <div class="video-yt">
-                <p>Tambien creo contenido por youtube</p>
+                <h4>También creo contenido sobre informática en YouTube</h4>
+                <p>Si te resulta útil, ¡me
+                    encantaría que me apoyaras siguiéndome!</p>
                 <iframe id="myframe" src="https://www.youtube.com/embed/ptc4Awb0UpU?si=kuRyzCsBVyxxal3Z"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -155,14 +155,14 @@
         </div>
     </section>
 
-    <section class="contenedor">
+    <section class="contenedor contact" id="contact">
         <h2>Contacto</h2>
 
         <div class="contenido-contacto">
             <div class="contacto">
                 <div class="info-contacto">
                     <img loading="lazy" src="src/img/icons/place-svgrepo-com.svg" alt="">
-                    <p>Managua, Nicaragua, Villa Reconciliacion</p>
+                    <p>Managua, Nicaragua</p>
                 </div>
 
                 <div class="info-contacto">
@@ -179,10 +179,10 @@
             <form action="" class="formulario">
                 <legend>
                     <label for="nombre">Nombre</label>
-                    <input type="text" id="nombre" placeholder="nombre">
+                    <input type="text" id="nombre" placeholder="Tu nombre">
 
                     <label for="email">Correo</label>
-                    <input type="email" id="email" placeholder="correo">
+                    <input type="email" id="email" placeholder="Tu correo">
 
                     <label for="mensaje">Mensaje</label>
                     <textarea name="" id="mensaje" placeholder="Deja un mensaje"></textarea>
@@ -204,6 +204,9 @@
             </div>
         </div>
     </footer>
+
+
+    <script src="build/js/app.js"></script>
 
 </body>
 
