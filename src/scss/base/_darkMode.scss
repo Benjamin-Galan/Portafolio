@@ -39,7 +39,7 @@
     }
 
     .about{
-        h2, p{
+        h2, h4, p{
             color: v.$blanco;
         }
     }
@@ -52,14 +52,11 @@
             color: v.$amarillo;
             font-weight: 600;
         }
-        img{
-            filter: invert(100%);
-        }
     }   
 
     .presentacion,
     .proyectos{
-        ul, a{
+        a{
             filter: invert(100%);
         }
     }
